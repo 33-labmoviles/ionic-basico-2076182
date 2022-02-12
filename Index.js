@@ -15,5 +15,5 @@ function calcularTotal(){
     total=total+monto;
     console.log(total);
 
-    TotalMsg.innerHTML="Total: "+total;
+    TotalMsg.innerHTML="Total: "+ total;
 }
