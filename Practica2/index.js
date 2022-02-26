@@ -4,8 +4,9 @@ console.log("Hola Mundo");
 var total= 0;
 var monto= 0;
 var TotalMsg=document.getElementById("TotalMsg");
-
 var montoTxt=document.getElementById("Monto");
+var listaTicket = document.getElementById("ticket");
+var descripcionTxt = document.getElementById("Descripcion");
 
 function calcularTotal(){
 
@@ -15,4 +16,18 @@ function calcularTotal(){
     console.log(total);
 
     TotalMsg.innerHTML="Total: "+ total;
+    Imprimir(monto);
+}
+  
+function Imprimir(monto){
+    var Ticket=document.createElement("ion-item");
+    var LabelTicket=document.createElement("ion-label");
+
+    LabelTicket.innerHTML=descripcionTxt.value + " : $" + monto;
+
+    Ticket.appendChild(LabelTicket);
+    listaTicket.appendChild(Ticket);
+
+    descripcionTxt.value="";
+    montoTxt.value="";
 }
