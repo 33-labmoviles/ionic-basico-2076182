@@ -6,7 +6,6 @@ var monto= 0;
 var TotalMsg=document.getElementById("TotalMsg");
 
 var montoTxt=document.getElementById("Monto");
-//console.log("montoTxto");
 
 function calcularTotal(){
 
